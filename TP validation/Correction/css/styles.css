@@ -1,0 +1,536 @@
+/*Propriétés page général*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column; /* permet de créer une structure  de base pour agencer les premiers élément enfant de ma page avec en haut le main et en bas le footer*/
+    /*me permet de fixer mon footer en bas de fenêtre*/
+    min-height: 100vh; /* vh : hauteur de l'affichage, ici le body peut s'étendre au-delà de la hauteur de l'affichage si le contenu est plus long que la fenêtre du navigateur mais doit au minimum être égale à la hauteur de l'écran (si le contenu est limité */
+}
+
+main{
+    /*me permet de fixer mon footer en bas de fenêtre*/
+    flex : 1;/*propriété css qui indique au main de prendre autant d'espace vertical que possible à l'intérieur de son conteneur (ici le body)*/
+}
+
+/*Titre header et footer*/
+.style-main-title{
+    margin: 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+
+/*Header*/
+    /*bannière de mon header avec image de fond*/
+.banner{
+    background: url("../images/banner.jpg") top center no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+    /*fond de couleur dégradé par dessus mon image de fond et placement du h1*/
+.overlay{
+    background: linear-gradient(93.34deg, rgba(31, 191, 184, 0.79) 0.46%, rgba(5, 113, 108, 0.632) 31.64%, rgba(25, 120, 165, 0.79) 59.33%, rgba(3, 17, 99, 0.79) 100%);
+    ;
+    height: 100%;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*FOOTER*/
+    /*Fond et placement élements enfant du footer*/
+footer{
+    padding: 20px;
+    background: linear-gradient(93.34deg, rgba(31, 191, 184, 0.79) 0.46%, rgba(5, 113, 108, 0.632) 31.64%, rgba(25, 120, 165, 0.79) 59.33%, rgba(3, 17, 99, 0.79) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    /*ul des mes liens vers les différents réseaux sociaux*/
+footer div ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}   /*liens des réseaux sociaux et mentions légales*/
+footer div a, footer div ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+    /*positionnement de mes liens (réseaux et mentions)*/
+.socials{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+    /*positionnement de mes liens (réseaux)*/
+.socials ul{
+    display: flex;
+}
+    /*espacement interne de mes liens (réseaux)*/
+.socials ul li{
+    padding-left: 10px;
+}
+
+
+/*PAGE ACCUEIL*/
+    /*NAV*/
+.nav-main{
+    min-height: 65vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+        /*UL qui regroupe les liens de mon menu*/
+.nav-main ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+        /*les liens de mon menu*/
+.nav-main ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin: 20px 0;
+}
+        /*carré qui contient l'image de fond et carré qui contient le texte placé en bas à droite*/
+.nav-main ul li .img-nav, .text-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    border-radius: 150px;
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    -ms-border-radius: 150px;
+    -o-border-radius: 150px;
+}
+        /*images de fond des carrés des différents liens du menu*/
+.nav-main ul li #img-visit{
+    background: url("../images/visit.jpg") center center;
+    background-size: cover;
+}
+.nav-main ul li #img-price{
+    background: url("../images/price.jpg") center right;
+    background-size: cover;
+}
+.nav-main ul li #img-training{
+    background: url("../images/training.jpg") center center;
+    background-size: cover;
+}
+.nav-main ul li #img-turtle{
+    background: url("../images/turtle.jpg") center center;
+    background-size: cover;
+}
+        /*carré d'un fond de couleur spécifique*/
+.nav-main ul li #img-visit .text-nav{
+    background: linear-gradient(0deg, rgba(31, 191, 184, 0.54), rgba(31, 191, 184, 0.54));
+}
+        /*carré d'un fond de couleur spécifique*/
+.nav-main ul li #img-price .text-nav{
+    background: linear-gradient(0deg, rgba(25, 120, 165, 0.54), rgba(25, 120, 165, 0.54));
+}
+        /*carré d'un fond de couleur spécifique*/
+.nav-main ul li #img-training .text-nav{
+    background: linear-gradient(0deg, rgba(3, 17, 99, 0.54), rgba(3, 17, 99, 0.54));
+}
+/*carré d'un fond de couleur spécifique*/
+.nav-main ul li #img-turtle .text-nav{
+    background: linear-gradient(0deg, rgba(2, 8, 42, 0.54), rgba(2, 8, 42, 0.54));
+}
+        /*Texte dans le carré de couleur*/
+.nav-main ul li a div p{
+    padding: 20px;
+    width: 70px;
+    text-align: center;
+    margin: 0;
+    font-size: .85rem;
+}
+        /*Textes avec fond de couleur*/
+.nav-main ul li a#img-visit div p{
+    background-color: #1FBFB8;
+}
+.nav-main ul li a#img-price div p{
+    background-color: #1978A5;
+}
+.nav-main ul li a#img-training div p{
+    background-color: #031163;
+}
+.nav-main ul li a#img-turtle div p{
+    background-color: #02082a;
+}
+
+/*PAGE Price, visit, training et gallery*/
+    /*Icone de retour sur page d'accueil*/
+.return-home{
+    color: #0a415b;
+    display: block;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+    /*fil d'ariane*/
+.breadcrumb{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+    /*placement des enfants de article les 2 divs*/
+.style-pages{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+
+}
+    /*largeur et hauteur minimum de la div décorative au dessus de l'image*/
+.style-pages .style-box-visit,.style-pages .style-box-price,.style-pages .style-box-training, .style-pages .style-box-turtle{
+    width: 100%;
+    min-height: 200px;
+}
+    /*formatage du texte de la div décorative*/
+.style-box-visit p, .style-box-price p, .style-box-training p, .style-pages .style-box-turtle p{
+    color: #fff;
+    height : 10%;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    /*marges des icônes des titres du contenu*/
+.fa-tag, .fa-clock, .fa-archway, .fa-list-check, .fa-water, .fa-envelope-open-text {
+    margin-right: 5px;
+}
+    /*marge de la div du contenu*/
+.style-content-pages{
+    padding: 20px;
+}
+
+
+/*PAGE Visit*/
+    /*image de fond de la div décorative de la page visit*/
+.style-box-visit{
+    background: url("../images/visit.jpg") center center;
+    background-size: cover;
+
+}
+    /*couleur de fond du texte de la div décorative de la page visit*/
+.style-box-visit p{ 
+    background-color: #1fbfb7a0;
+}
+    /*couleur des icônes du contenu de la page visit*/
+.color-title-visit, .color-title-visit .fa-archway, .color-title-visit .fa-clock{
+    color: #1FBFB8;
+}
+
+/*PAGE Price*/
+    /*image de fond de la div décorative de la page price*/
+.style-box-price{
+    background: url("../images/price.jpg") center center;
+    background-size: cover;
+
+}
+    /*couleur de fond du texte de la div décorative de la page price*/
+.style-box-price p{
+    background-color: #1979a58b;
+}
+    /*couleur des icônes du contenu de la page price*/
+.color-title-price, .color-title-price .fa-tag, .color-title-price .fa-clock{
+    color: #1978A5;
+}
+
+
+/*PAGE training*/
+    /*image de fond de la div décorative de la page training*/
+.style-box-training{
+    background: url("../images/training.jpg") center center;
+    background-size: cover;
+
+}
+    /*couleur de fond du texte de la div décorative de la page training*/
+.style-box-training p{
+    background-color: #0311637a;
+}
+    /*couleur des icônes du contenu de la page training*/
+.color-title-training, .color-title-training .fa-list-check{
+    color: #031163;
+}
+
+/*PAGE galerie des tortues*/
+    /*Container de mon image decorative*/
+.style-box-turtle{
+        min-width: 40%;
+    }
+    /*image de fond de la div décorative de la page Galerie*/
+.style-box-turtle{
+    background: url("../images/turtle.jpg") center center;
+    background-size: cover;
+
+}
+    /*couleur de fond du texte de la div décorative de la page Galerie*/
+.style-box-turtle p{
+    background-color: rgba(2, 8, 42, 0.541);
+}
+    /*couleur des icônes du contenu de la page Galerie*/
+.color-title-turtle,  .color-title-turtle .fa-water, .color-title-turtle .fa-envelope-open-text{
+    color: #02082a;
+}
+    /*Partie tortues*/
+        /*Parent des imgages de tortue*/
+.container-img-turtle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+        /*Les div qui contiennent les images et leurs titres*/
+.style-pages .container-img-turtle .turtle{
+    width: 250px;
+    border: 2px solid #2b5a88;
+    cursor: pointer;
+    margin: 10px;
+    overflow: hidden;
+}
+        /*les images des tortues*/
+.style-pages .container-img-turtle .turtle img{
+    width: 100%;
+    border: 1px solid #2b5a88;
+    transition: all 0.5s linear;
+}
+.style-pages .container-img-turtle .turtle img:hover{
+    cursor: pointer;
+    scale: 1.75;
+    filter: grayscale(80%);
+}
+        /*Les noms de tortues*/
+.style-pages .container-img-turtle .turtle h3{
+    text-transform: uppercase;
+    text-align: center  ;
+    margin: 10px 0;
+    padding: 10px;
+}
+    /*Partie newsletter*/
+    .newsletter-area{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .newsletter>h3{
+        text-align: center;
+    }
+    .newsletter .newsletter-area form{
+        width: 100%; /*Met le formulaire à une largeur total de son parent*/
+    }
+    .newsletter .newsletter-area form .input-group{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .newsletter-area form .input-group input{
+        padding: 10px 15px;
+        font-size: 1rem;
+        border: 1px solid #040e4d;
+        border-radius: 5px 0 0 5px;
+        -webkit-border-radius: 5px 0 0 5px;
+        -moz-border-radius: 5px 0 0 5px;
+        -ms-border-radius: 5px 0 0 5px;
+        -o-border-radius: 5px 0 0 5px;
+}
+    .newsletter-area form .input-group .btn-validation{
+        cursor: pointer;
+        color: #fff;
+        background-color: #040e4d;
+        border: 1px solid #040e4d;
+        border-radius: 0 5px 5px 0;
+        transition:color .15s ease-in-out;
+        -webkit-border-radius: 0 5px 5px 0;
+        -moz-border-radius: 0 5px 5px 0;
+        -ms-border-radius: 0 5px 5px 0;
+        -o-border-radius: 0 5px 5px 0;
+        -webkit-transition:color .15s ease-in-out;
+        -moz-transition:color .15s ease-in-out;
+        -ms-transition:color .15s ease-in-out;
+        -o-transition:color .15s ease-in-out;
+}
+    .newsletter-area form .input-group .btn-validation:hover{
+        color: #fff;
+        background-color: #02082a;
+        border-color: #02082a;
+    }
+    .newsletter .newsletter-area form .is-invalid+input[type='submit']{
+        background-color: #d41a2d;
+        border: solid 1px #d41a2d;
+    }
+
+
+/*Media queries*/
+    /*Format pour tablette*/
+@media screen and (min-width:750px){
+        /*NAV page d'accueil*/
+    .nav-main ul{
+        flex-direction: row;
+        justify-content: space-around;
+        min-height : 450px;
+    }
+    .nav-main ul li .img-nav, .text-nav{
+        width: 180px;
+        height: 180px;
+    }
+    .nav-main ul li a div p{
+        padding : 10px 15px;
+        width: 80px;
+        font-size: 1rem;
+    }
+        /*Page de la galerie*/
+    .container-img-turtle{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .newsletter-area form .input-group{
+        justify-content: left;
+    }
+    .newsletter-area form .input-group input[type="text"]{
+        width: 60%;
+    }
+}
+
+    /*Format pour desktop*/
+@media screen and (min-width:1400px){
+        /*NAV page d'accueil*/
+    .nav-main ul{
+        min-height : 500px;
+    }
+    .nav-main ul li .img-nav, .text-nav{
+        width: 300px;
+        height: 300px;
+        border-radius: 350px;
+        -webkit-border-radius: 350px;
+        -moz-border-radius: 350px;
+        -ms-border-radius: 350px;
+        -o-border-radius: 350px;
+    }
+    .nav-main ul li a div p{
+        padding : 50px 5px;
+        width: 150px;
+        font-size: 1.30rem;
+    }
+        /*icônes des réseaux sociaux du footer*/
+    .socials ul li a i{
+        font-size: 1.75rem;
+    }
+        /*PAGES PRICE, VISIT et TRAINING*/
+
+            /*largeur et hauteur minimum de la div décorative au dessus de l'image*/
+    .style-pages .style-box-visit,.style-pages .style-box-price,.style-pages .style-box-training{
+        min-height: 70vh;
+    }
+            /*placement enfants de article les 2 divs*/
+    .style-pages{
+        flex-direction: row;
+    }
+        /*Taille texte des rectangles de couleur*/
+    .style-box-price p, .style-box-visit p, .style-box-training p, .style-box-turtle p{
+        font-size: 1.85rem;
+    }
+        /*placement des enfants de la div du contenu de la page*/
+    .style-content-pages{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+        /*Page de la galerie*/
+            /*Partie tortues*/
+                /*container banière image deco*/
+    .style-box-turtle{
+        max-width: 40%;
+    }
+                /*container images*/
+    .container-img-turtle{
+        margin-top: 20px;
+    }
+        /*Partie newsletter*/
+    .newsletter>h3{
+        text-align: left;
+        padding-left: 20px;
+    }
+    .newsletter-area form .input-group input[type="text"]{
+        width: initial;
+    }
+    .input-group .invalid-feedback{
+        color: #da1c2f;
+        padding: 0 20px;
+    }
+
+}
+
+/* CLASSES JS */
+
+    /*Partie tortue pour afficher l'overlay*/
+.overlay-turtle{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.overlay-turtle img{
+    max-width: 90%;
+    max-height: 90%;
+}
+
+    /*Partie pour les messages d'erreurs et de succès du formulaire*/
+        /*sur le champs*/
+.newsletter .newsletter-area form .is-invalid{
+    border-color: #d41a2d;
+}
+        /*Message d'erreur*/
+.invalid-feedback{
+    color: #da1c2f;
+    padding: 20px;
+}
+        /*Message de succès*/
+.alert-success{
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}

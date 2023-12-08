@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <title>Nos tortues</title>
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <main>
+            <!--banière et titre de mon header-->
+            <header class="banner">
+                <div class="overlay">
+                    <h1 class="style-main-title">Nos Tortues !</h1>
+                </div>
+            </header>
+            <!--Contenu de ma page Galerie des tortues-->
+            <article class="style-pages">
+                <div class="style-box-turtle">
+                    <p>Nos tortues !</p>
+                </div>
+                <div class="style-content-pages">
+                    <div class="breadcrumb">
+                        <a aria-label="Page d'accueil" title="Retour à la page d'accueil" href="../index.html" class="return-home">
+                            <i class="fa-solid fa-house"></i>
+                        </a>
+                        <p>/ page des tortues et de notre newletter</p>
+                    </div>
+                    <h2 class="color-title-turtle">
+                        <i class="fa-solid fa-water"></i>Nos jolies tortue
+                    </h2>
+                    <div class="container-img-turtle">
+                        <div class="turtle" data-open="turtle-alice.png">
+                            <img class="img-turtle" src="../images/images-galerie/Miniatures/turtle-alice.jpg" alt="Tortue Alice">
+                            <h3>Alice : 30 ans</h3>
+                        </div>
+
+                        <div class="turtle" data-open="turtle-elio.png">
+                            <img class="img-turtle" src="../images/images-galerie/Miniatures/turtle-elio.jpg" alt="Tortue Élio">
+                            <h3>Élio : 20 ans</h3>
+                        </div>
+
+                        <div class="turtle" data-open="turtle-elise.png">
+                            <img class="img-turtle" src="../images/images-galerie/Miniatures/turtle-elise.jpg" alt="Tortue Élise">
+                            <h3>Élise : 7 ans</h3>
+                        </div>
+                        <div class="turtle" data-open="turtle-emilie.png">
+                            <img class="img-turtle" src="../images/images-galerie/Miniatures/turtle-emilie.jpg" alt="Tortue Émilie">
+                            <h3>Émilie : 15 ans</h3>
+                        </div>
+                        <div class="turtle" data-open="turtle-gertrude.png">
+                            <img class="img-turtle" src="../images/images-galerie/Miniatures/turtle-gertrude.jpg" alt="Tortue Gertrude">
+                            <h3>Gertrude : 80 ans</h3>
+                        </div>
+                        <div class="turtle" data-open="turtle-jeannot.png">
+                            <img class="img-turtle" src="../images/images-galerie/Miniatures/turtle-jeannot.jpg" alt="Tortue Jeannot">
+                            <h3>Jeannot : 23 ans</h3>
+                        </div>
+                        <div class="turtle" data-open="turtle-lili.png">
+                            <img class="img-turtle" src="../images/images-galerie/Miniatures/turtle-lili.jpg" alt="Tortue Lili">
+                            <h3>Lili : 3 ans</h3>
+                        </div>
+                        <div class="turtle" data-open="turtle-lucie.png">
+                            <img class="img-turtle" src="../images/images-galerie/Miniatures/turtle-lucie.jpg" alt="Tortue Lucie">
+                            <h3>Lucie : 32 ans</h3>
+                        </div>
+                        <div class="turtle" data-open="turtle-lucien.png">
+                            <img class="img-turtle" src="../images/images-galerie/Miniatures/turtle-lucien.jpg" alt="Tortue Lucien">
+                            <h3>Lucien : 34 ans</h3>
+                        </div>
+                        <div class="turtle" data-open="turtle-nelly.png">
+                            <img class="img-turtle" src="../images/images-galerie/Miniatures/turtle-nelly.jpg" alt="Tortue Nelly">
+                            <h3>Nelly : 42 ans</h3>
+                        </div>
+                        <div class="turtle" data-open="turtle-nina.png">
+                            <img class="img-turtle" src="../images/images-galerie/Miniatures/turtle-nina.jpg" alt="Tortue Nina">
+                            <h3>Nina : 1 ans</h3>
+                        </div>
+                        <div class="turtle" data-open="turtle-norbert.png">
+                            <img class="img-turtle" src="../images/images-galerie/Miniatures/turtle-norbert.jpg" alt="Tortue Norbert">
+                            <h3>Norbert : 46 ans</h3>
+                        </div>
+
+                    </div>
+                    <h2 class="color-title-turtle">
+                        <i class="fa-solid fa-envelope-open-text"></i>Notre Newsletter
+                    </h2>
+                    <div class="newsletter">
+                        <h3>Inscrivez-vous pour rester informé !</h3>
+                        <div class="newsletter-area">
+                            <!-- Formulaire d'inscription newsletter -->
+                            <form action="unepage.php" method="POST">
+                                <div class="input-group">
+                                    <input type="text" class="email" placeholder="alice@exemple.com">
+                                    <input type="submit" class=" btn-validation" value="Envoyer">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <!--titre et liens réseaux sociaux et mentions légales de mon footer-->
+        <footer>
+            <div>
+                <h2 class="style-main-title">La vallée des tortues</h2>
+            </div>
+            <div class="socials">
+                <a href="#">Mentions légales</a>
+                <ul>
+                    <!--Point info :
+                        attribut aria-label : Ici cet attribut sert à fournir une description accessible de notre icône, elle doit indiquer clairement quel est le réseau auquel le lien va conduire
+                    -->
+                    <li><a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://fr.linkedin.com/" aria-label="Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="../js/script.js"></script>
+    </body>
+</html>

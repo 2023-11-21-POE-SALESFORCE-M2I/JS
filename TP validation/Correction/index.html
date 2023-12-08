@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <title>TP : La vallée des tortues</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <main>
+            <!--banière et titre de mon header-->
+            <header class="banner">
+                <div class="overlay">
+                    <h1 class="style-main-title">La vallée des tortues</h1>
+                </div>
+            </header>
+            <!--Menu de navigation de ma page d'accueil-->
+            <nav class="nav-main">
+                <ul>
+                    <li>
+                        <a href="pages/visit.html" id="img-visit" class="img-nav">
+                            <div class="text-nav">
+                                <p>Visiter notre refuge</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/price.html" id="img-price" class="img-nav">
+                            <div class="text-nav">
+                                <p>Nos tarifs et horaires</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/training.html" id="img-training" class="img-nav">
+                            <div class="text-nav">
+                                <p>Formation aux chéloniens</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/gallery.html" id="img-turtle" class="img-nav">
+                            <div class="text-nav">
+                                <p>Rencontrez nos tortues !</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </main>
+        <!--titre et liens réseaux sociaux et mentions légales de mon footer-->
+        <footer>
+            <div>
+                <h2 class="style-main-title">La vallée des tortues</h2>
+            </div>
+            <div class="socials">
+                <a href="#">Mentions légales</a>
+                <ul>
+                    <!--Point info :
+                        attribut aria-label : Ici cet attribut sert à fournir une description accessible de notre icône, elle doit indiquer clairement quel est le réseau auquel le lien va conduire
+                    -->
+                    <li><a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://fr.linkedin.com/" aria-label="Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
